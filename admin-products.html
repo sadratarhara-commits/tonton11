@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مدیریت محصولات و تنوع لوکس | Velvet Luxe</title>
+  <meta name="description" content="مدیریت کاتالوگ محصولات، موجودی سایزها، قیمت‌گذاری و وضعیت ویترین بوتیک.">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23b0004a'><path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/></svg>">
+</head>
+<body style="background:#fff8f8;">
+
+  <div class="admin-layout">
+    <!-- Right Sidebar -->
+    <aside class="admin-sidebar">
+      <div>
+        <div class="admin-brand">
+          <a href="./index.html" style="display:inline-flex; align-items:center; gap:0.5rem; justify-content:center;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--primary);"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            <div style="text-align:right;">
+              <div style="font-family:var(--font-serif); font-size:1.15rem; font-weight:800; color:var(--primary); letter-spacing:0.08em;">VELVET LUXE</div>
+              <div style="font-size:0.62rem; color:var(--champagne-dark);">پنل مدیریت فروشگاه</div>
+            </div>
+          </a>
+        </div>
+
+        <div style="font-size:0.72rem; color:var(--text-light); margin-bottom:0.6rem; padding:0 0.5rem;">مدیریت فروش و انبار</div>
+        <ul class="admin-nav-list" style="margin-bottom:1.8rem;">
+          <li class="admin-nav-item">
+            <a href="./admin.html">
+              <span style="display:flex; align-items:center; gap:0.6rem;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                پیشخوان و آمار فروش
+              </span>
+            </a>
+          </li>
+          <li class="admin-nav-item">
+            <a href="./admin.html#orders">
+              <span style="display:flex; align-items:center; gap:0.6rem;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                مدیریت سفارش‌ها
+              </span>
+              <span class="badge badge-gold" style="font-size:0.65rem;">۱۲ جدید</span>
+            </a>
+          </li>
+          <li class="admin-nav-item active">
+            <a href="./admin-products.html">
+              <span style="display:flex; align-items:center; gap:0.6rem;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+                محصولات و تنوع سایز
+              </span>
+            </a>
+          </li>
+          <li class="admin-nav-item">
+            <a href="./admin.html#inventory">
+              <span style="display:flex; align-items:center; gap:0.6rem;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                موجودی انبار و رنگ‌بندی
+              </span>
+            </a>
+          </li>
+          <li class="admin-nav-item">
+            <a href="./admin.html#customers">
+              <span style="display:flex; align-items:center; gap:0.6rem;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                مشتریان و خریداران VIP
+              </span>
+            </a>
+          </li>
+          <li class="admin-nav-item">
+            <a href="./admin.html#finance">
+              <span style="display:flex; align-items:center; gap:0.6rem;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                گزارش مالی و سودآوری
+              </span>
+            </a>
+          </li>
+        </ul>
+
+        <div style="font-size:0.72rem; color:var(--text-light); margin-bottom:0.6rem; padding:0 0.5rem;">تنظیمات پایه</div>
+        <ul class="admin-nav-list">
+          <li class="admin-nav-item">
+            <a href="./admin.html#shipping">
+              <span style="display:flex; align-items:center; gap:0.6rem;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                روش‌های ارسال محرمانه
+              </span>
+            </a>
+          </li>
+          <li class="admin-nav-item">
+            <a href="./admin.html#settings">
+              <span style="display:flex; align-items:center; gap:0.6rem;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                تنظیمات فروشگاه
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="admin-user-card">
+        <div style="display:flex; align-items:center; gap:0.6rem;">
+          <div style="width:36px; height:36px; border-radius:50%; background:#b0004a; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <div>
+            <div style="font-size:0.8rem; font-weight:700; color:var(--text-main);">مدیر ارشد بوتیک</div>
+            <div style="font-size:0.68rem; color:var(--text-light); direction:ltr; text-align:right;">admin@velvetluxe.ir</div>
+          </div>
+        </div>
+        <a href="./index.html" title="خروج"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg></a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="admin-main-content">
+      <!-- Topbar -->
+      <div class="admin-topbar">
+        <div style="position:relative; width:340px;">
+          <input type="text" class="form-input" placeholder="جستجوی سریع سفارش یا کالا..." style="padding-right:2.5rem; font-size:0.82rem; border-radius:var(--radius-full);">
+          <span style="position:absolute; right:0.9rem; top:50%; transform:translateY(-50%); color:var(--text-light);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </span>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:1.25rem;">
+          <div style="display:flex; align-items:center; gap:0.4rem; font-size:0.78rem; color:#10b981; font-weight:600;">
+            <span style="width:8px; height:8px; border-radius:50%; background:#10b981;"></span>
+            <span>فروشگاه فعال • وضعیت پایدار و آنلاین</span>
+          </div>
+
+          <div style="font-size:0.82rem; font-weight:700; color:var(--primary); background:#fff0f5; padding:0.35rem 0.8rem; border-radius:var(--radius-full);">
+            فروش امروز: ۲۸,۴۵۰,۰۰۰ تومان
+          </div>
+
+          <a href="./index.html" class="btn-outline" style="padding:0.45rem 0.9rem; font-size:0.8rem; border-radius:var(--radius-full);">
+            مشاهده فروشگاه
+          </a>
+        </div>
+      </div>
+
+      <!-- Page Title & Header Actions -->
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:1.8rem; flex-wrap:wrap; gap:1rem;">
+        <div>
+          <span style="font-size:0.75rem; color:var(--champagne-dark); font-weight:700;">کاتالوگ فاخر آتلیه ✨ نسخه کالکشن پاییز و زمستان ۱۴۰۳</span>
+          <h1 style="font-size:1.6rem; font-weight:800; color:var(--text-main); margin-top:0.2rem;">مدیریت محصولات و تنوع لوکس</h1>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:1rem;">
+          <!-- Quick metric badges -->
+          <div style="display:flex; gap:0.6rem; font-size:0.8rem;">
+            <div style="background:#fff; border:1px solid var(--border-subtle); padding:0.4rem 0.8rem; border-radius:var(--radius-md); text-align:center;">
+              <span style="color:var(--text-light); font-size:0.7rem; display:block;">کل آیتم‌ها</span>
+              <span style="font-weight:800; color:var(--text-main);">۱۸۴ قلم</span>
+            </div>
+            <div style="background:#fff; border:1px solid #fed7aa; padding:0.4rem 0.8rem; border-radius:var(--radius-md); text-align:center;">
+              <span style="color:#d97706; font-size:0.7rem; display:block;">هشدار کسری انبار</span>
+              <span style="font-weight:800; color:#d97706;">۷ ترکیب</span>
+            </div>
+            <div style="background:#fff; border:1px solid var(--border-subtle); padding:0.4rem 0.8rem; border-radius:var(--radius-md); text-align:center;">
+              <span style="color:var(--text-light); font-size:0.7rem; display:block;">فعال در ویترین</span>
+              <span style="font-weight:800; color:var(--primary);">۱۶۲ مدل</span>
+            </div>
+          </div>
+
+          <button onclick="showToast('مودال ثبت محصول جدید باز شد.', 'rose')" class="btn-primary" style="background:#b0004a;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            افزودن محصول جدید
+          </button>
+        </div>
+      </div>
+
+      <!-- Filters & Bulk Action Bar -->
+      <div class="admin-card" style="padding:1rem 1.25rem; margin-bottom:1.5rem;">
+        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+          <div style="position:relative; width:300px;">
+            <input type="text" id="admin-product-search" class="form-input" placeholder="جستجوی نام تجاری، بارکد، کد کالا..." style="padding-right:2.5rem; font-size:0.82rem;">
+            <span style="position:absolute; right:0.8rem; top:50%; transform:translateY(-50%); color:var(--text-light);"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></span>
+          </div>
+
+          <div style="display:flex; gap:0.4rem; align-items:center; flex-wrap:wrap;">
+            <button class="sort-pill active">همه دسته‌ها</button>
+            <button class="sort-pill">ست‌های لوکس گیپور</button>
+            <button class="sort-pill">کراپ و بادی ساتن</button>
+            <button class="sort-pill">شورت‌های برش لیزری</button>
+            <button class="sort-pill">لباس خواب سیلک</button>
+          </div>
+
+          <div style="display:flex; align-items:center; gap:0.5rem;">
+            <select class="form-input" style="font-size:0.8rem; padding:0.4rem 0.8rem; width:auto;">
+              <option>وضعیت انبار: همگی</option>
+              <option>دارای کسری</option>
+              <option>اتمام موجودی</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Bulk Action Toolbar (Appears when checked) -->
+        <div id="bulk-actions-bar" style="display:none; align-items:center; justify-content:space-between; background:#fff0f5; border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:0.6rem 1rem; margin-top:1rem;">
+          <span id="selected-count-span" style="font-size:0.82rem; font-weight:700; color:var(--primary);">۳ مورد انتخاب شده</span>
+          <div style="display:flex; gap:0.6rem;">
+            <button class="btn-outline" style="padding:0.3rem 0.7rem; font-size:0.75rem;">تغییر قیمت گروهی</button>
+            <button class="btn-outline" style="padding:0.3rem 0.7rem; font-size:0.75rem;" onclick="exportExcel()">خروجی Excel</button>
+            <button class="btn-primary" style="padding:0.3rem 0.7rem; font-size:0.75rem; background:#dc2626;" onclick="showToast('محصولات انتخاب شده حذف شدند.', 'rose')">حذف دسته‌جمعی</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Products Management Table (Matching Stitch Image 9) -->
+      <div class="admin-card">
+        <div style="overflow-x:auto;">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th style="width:30px;"><input type="checkbox" id="select-all-products" style="accent-color:var(--primary);"></th>
+                <th>محصول، شناسه و پارچه</th>
+                <th>دسته‌بندی آتلیه</th>
+                <th>قیمت و آفر</th>
+                <th>رنگ‌های فعال</th>
+                <th>موجودی تفکیکی سایزها</th>
+                <th style="text-align:center;">ویترین</th>
+                <th style="text-align:center;">عملیات مدیریت</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Row 1 -->
+              <tr class="admin-product-row">
+                <td><input type="checkbox" class="product-row-check" checked style="accent-color:var(--primary);"></td>
+                <td>
+                  <div style="display:flex; align-items:center; gap:0.8rem;">
+                    <div style="position:relative; width:48px; height:48px; border-radius:var(--radius-md); overflow:hidden; flex-shrink:0;">
+                      <img src="https://images.unsplash.com/photo-1583846783214-7229a91b20ed?auto=format&fit=crop&w=120&q=80" style="width:100%; height:100%; object-fit:cover;">
+                      <span class="badge badge-gold" style="position:absolute; bottom:2px; right:2px; font-size:0.55rem; padding:0 3px;">VIP</span>
+                    </div>
+                    <div>
+                      <div style="font-weight:700; color:var(--text-main);">ست سوتین و شورت دانتل فرانسوی بلانژ</div>
+                      <div style="font-size:0.7rem; color:var(--text-light); direction:ltr; text-align:right;">SKU: VL-BR-8041</div>
+                      <div style="font-size:0.68rem; color:var(--text-muted);">دانتل کتان اعلا ضدحساسیت</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <span class="badge badge-outline">ست‌های لوکس گیپور</span>
+                </td>
+                <td>
+                  <div style="font-weight:800; color:var(--primary);" class="tabular-nums">۱,۴۲۰,۰۰۰ تومان</div>
+                  <div style="display:flex; gap:0.4rem; align-items:center;">
+                    <span style="font-size:0.7rem; color:var(--text-light); text-decoration:line-through;">۱,۶۸۰,۰۰۰</span>
+                    <span class="badge badge-rose" style="font-size:0.65rem;">۱۵٪ تخفیف</span>
+                  </div>
+                </td>
+                <td>
+                  <div style="display:flex; align-items:center; gap:3px;">
+                    <span class="color-dot" style="background:#ad1457;"></span>
+                    <span class="color-dot" style="background:#201a1d;"></span>
+                    <span class="color-dot" style="background:#fce4ec;"></span>
+                    <span style="font-size:0.68rem; color:var(--text-light);">+۱ رنگ</span>
+                  </div>
+                </td>
+                <td>
+                  <div style="display:flex; gap:3px; flex-wrap:wrap; font-size:0.72rem;">
+                    <span class="badge badge-outline">S: 12</span>
+                    <span class="badge badge-outline">M: 8</span>
+                    <span class="badge" style="background:#fee2e2; color:#dc2626;">L: 2 (کسری)</span>
+                    <span class="badge badge-outline">XL: 14</span>
+                  </div>
+                </td>
+                <td style="text-align:center;">
+                  <label class="switch">
+                    <input type="checkbox" checked onchange="showToast('وضعیت نمایش در ویترین ذخیره شد.', 'success')">
+                    <span class="slider"></span>
+                  </label>
+                </td>
+                <td style="text-align:center;">
+                  <div style="display:flex; justify-content:center; gap:0.35rem;">
+                    <button class="btn-outline" style="padding:0.3rem 0.45rem;" title="ویرایش" onclick="showToast('ویرایش محصول باز شد.')"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></button>
+                    <button class="btn-outline" style="padding:0.3rem 0.45rem;" title="پالت رنگ"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 000 20"/></svg></button>
+                    <button class="btn-outline" style="padding:0.3rem 0.45rem; color:#dc2626;" title="حذف" onclick="showToast('آیتم به بایگانی موقت رفت.')"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18m-2 0v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/></svg></button>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Row 2 -->
+              <tr class="admin-product-row">
+                <td><input type="checkbox" class="product-row-check" checked style="accent-color:var(--primary);"></td>
+                <td>
+                  <div style="display:flex; align-items:center; gap:0.8rem;">
+                    <div style="position:relative; width:48px; height:48px; border-radius:var(--radius-md); overflow:hidden; flex-shrink:0;">
+                      <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=120&q=80" style="width:100%; height:100%; object-fit:cover;">
+                      <span class="badge badge-gold" style="position:absolute; bottom:2px; right:2px; font-size:0.55rem; padding:0 3px;">ابریشم ۱۰۰٪</span>
+                    </div>
+                    <div>
+                      <div style="font-weight:700; color:var(--text-main);">پیراهن خواب ابریشمی مدل مارکیز</div>
+                      <div style="font-size:0.7rem; color:var(--text-light); direction:ltr; text-align:right;">SKU: VL-SL-3092</div>
+                      <div style="font-size:0.68rem; color:var(--text-muted);">ساتن سیلک کره‌ای ۲۲ موم</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <span class="badge badge-outline">لباس خواب سیلک</span>
+                </td>
+                <td>
+                  <div style="font-weight:800; color:var(--text-main);" class="tabular-nums">۲,۸۵۰,۰۰۰ تومان</div>
+                  <div style="font-size:0.7rem; color:var(--text-light);">بدون تخفیف</div>
+                </td>
+                <td>
+                  <div style="display:flex; align-items:center; gap:3px;">
+                    <span class="color-dot" style="background:#0f172a;"></span>
+                    <span class="color-dot" style="background:#c5a059;"></span>
+                    <span class="color-dot" style="background:#ffffff;"></span>
+                  </div>
+                </td>
+                <td>
+                  <div style="display:flex; gap:3px;">
+                    <span class="badge" style="background:#dcfce7; color:#15803d;">Free: 23 (موجودی متعادل)</span>
+                  </div>
+                </td>
+                <td style="text-align:center;">
+                  <label class="switch">
+                    <input type="checkbox" checked onchange="showToast('وضعیت نمایش در ویترین ذخیره شد.', 'success')">
+                    <span class="slider"></span>
+                  </label>
+                </td>
+                <td style="text-align:center;">
+                  <div style="display:flex; justify-content:center; gap:0.35rem;">
+                    <button class="btn-outline" style="padding:0.3rem 0.45rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></button>
+                    <button class="btn-outline" style="padding:0.3rem 0.45rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 000 20"/></svg></button>
+                    <button class="btn-outline" style="padding:0.3rem 0.45rem; color:#dc2626;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18m-2 0v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/></svg></button>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Row 3 -->
+              <tr class="admin-product-row">
+                <td><input type="checkbox" class="product-row-check" checked style="accent-color:var(--primary);"></td>
+                <td>
+                  <div style="display:flex; align-items:center; gap:0.8rem;">
+                    <div style="position:relative; width:48px; height:48px; border-radius:var(--radius-md); overflow:hidden; flex-shrink:0;">
+                      <img src="https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&w=120&q=80" style="width:100%; height:100%; object-fit:cover;">
+                      <span class="badge badge-rose" style="position:absolute; bottom:2px; right:2px; font-size:0.55rem; padding:0 3px;">پک ۳ عددی</span>
+                    </div>
+                    <div>
+                      <div style="font-weight:700; color:var(--text-main);">پک سه‌تایی شورت لیزری بدون درز ایرفلکس</div>
+                      <div style="font-size:0.7rem; color:var(--text-light); direction:ltr; text-align:right;">SKU: VL-PT-1120</div>
+                      <div style="font-size:0.68rem; color:var(--text-muted);">میکروفیبر بدون رد دوخت</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <span class="badge badge-outline">شورت‌های برش لیزری</span>
+                </td>
+                <td>
+                  <div style="font-weight:800; color:var(--primary);" class="tabular-nums">۴۸۰,۰۰۰ تومان</div>
+                  <div style="display:flex; gap:0.4rem; align-items:center;">
+                    <span style="font-size:0.7rem; color:var(--text-light); text-decoration:line-through;">۵۶۰,۰۰۰</span>
+                    <span class="badge badge-rose" style="font-size:0.65rem;">۱۴٪ آفر</span>
+                  </div>
+                </td>
+                <td>
+                  <div style="display:flex; align-items:center; gap:3px;">
+                    <span class="color-dot" style="background:#201a1d;"></span>
+                    <span class="color-dot" style="background:#f7eedb;"></span>
+                    <span class="color-dot" style="background:#f4d0c5;"></span>
+                  </div>
+                </td>
+                <td>
+                  <div style="display:flex; gap:3px; flex-wrap:wrap; font-size:0.72rem;">
+                    <span class="badge badge-outline">M: 25</span>
+                    <span class="badge badge-outline">L: 19</span>
+                    <span class="badge" style="background:#fee2e2; color:#dc2626;">XL: 0 (اتمام)</span>
+                  </div>
+                </td>
+                <td style="text-align:center;">
+                  <label class="switch">
+                    <input type="checkbox" checked onchange="showToast('وضعیت نمایش در ویترین ذخیره شد.', 'success')">
+                    <span class="slider"></span>
+                  </label>
+                </td>
+                <td style="text-align:center;">
+                  <div style="display:flex; justify-content:center; gap:0.35rem;">
+                    <button class="btn-outline" style="padding:0.3rem 0.45rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></button>
+                    <button class="btn-outline" style="padding:0.3rem 0.45rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 000 20"/></svg></button>
+                    <button class="btn-outline" style="padding:0.3rem 0.45rem; color:#dc2626;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18m-2 0v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/></svg></button>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Row 4 -->
+              <tr class="admin-product-row">
+                <td><input type="checkbox" class="product-row-check" style="accent-color:var(--primary);"></td>
+                <td>
+                  <div style="display:flex; align-items:center; gap:0.8rem;">
+                    <div style="position:relative; width:48px; height:48px; border-radius:var(--radius-md); overflow:hidden; flex-shrink:0;">
+                      <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=120&q=80" style="width:100%; height:100%; object-fit:cover;">
+                      <span class="badge badge-gold" style="position:absolute; bottom:2px; right:2px; font-size:0.55rem; padding:0 3px;">ویژه آتلیه</span>
+                    </div>
+                    <div>
+                      <div style="font-weight:700; color:var(--text-main);">کُرست مجلسی مخمل کوبیده مدل ویکتوریا</div>
+                      <div style="font-size:0.7rem; color:var(--text-light); direction:ltr; text-align:right;">SKU: VL-CR-5540</div>
+                      <div style="font-size:0.68rem; color:var(--text-muted);">مخمل ونوسین با فنر استیل</div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <span class="badge badge-outline">کراپ و بادی ساتن</span>
+                </td>
+                <td>
+                  <div style="font-weight:800; color:var(--text-main);" class="tabular-nums">۲,۱۵۰,۰۰۰ تومان</div>
+                  <div style="font-size:0.7rem; color:var(--text-light);">بدون تخفیف</div>
+                </td>
+                <td>
+                  <div style="display:flex; align-items:center; gap:3px;">
+                    <span class="color-dot" style="background:#201a1d;"></span>
+                    <span class="color-dot" style="background:#831843;"></span>
+                    <span class="color-dot" style="background:#064e3b;"></span>
+                  </div>
+                </td>
+                <td>
+                  <div style="display:flex; gap:3px; flex-wrap:wrap; font-size:0.72rem;">
+                    <span class="badge badge-outline">S: 5</span>
+                    <span class="badge badge-outline">M: 7</span>
+                    <span class="badge badge-outline">L: 3</span>
+                  </div>
+                </td>
+                <td style="text-align:center;">
+                  <label class="switch">
+                    <input type="checkbox" onchange="showToast('وضعیت نمایش در ویترین تغییر یافت.', 'rose')">
+                    <span class="slider"></span>
+                  </label>
+                </td>
+                <td style="text-align:center;">
+                  <div style="display:flex; justify-content:center; gap:0.35rem;">
+                    <button class="btn-outline" style="padding:0.3rem 0.45rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></button>
+                    <button class="btn-outline" style="padding:0.3rem 0.45rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 000 20"/></svg></button>
+                    <button class="btn-outline" style="padding:0.3rem 0.45rem; color:#dc2626;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18m-2 0v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/></svg></button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Pagination -->
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:1.5rem; flex-wrap:wrap; gap:1rem;">
+          <div style="font-size:0.78rem; color:var(--text-light);">
+            نمایش ۴ از ۱۸۴ قلم کالا • صفحه ۱ از ۲۳
+          </div>
+          <div class="pagination-wrap" style="margin-top:0;">
+            <button class="page-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+            <button class="page-btn active">۱</button>
+            <button class="page-btn">۲</button>
+            <button class="page-btn">۳</button>
+            <span style="padding:0 0.4rem; color:var(--text-light);">...</span>
+            <button class="page-btn">۲۳</button>
+            <button class="page-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/admin.js"></script>
+</body>
+</html>
